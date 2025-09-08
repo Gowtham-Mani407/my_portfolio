@@ -138,7 +138,7 @@ class _PortfolioPageState extends State<PortfolioPage>
                           ).textTheme.bodyLarge?.copyWith(color: textColor),
                         ),
                         const SizedBox(height: 30),
-
+                        sectionTitle("WORK EXPERIENCE"),
                         // Use the new widget for each job
                         LayoutBuilder(
                           builder: (context, constraints) {
@@ -147,28 +147,28 @@ class _PortfolioPageState extends State<PortfolioPage>
                               return Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  sectionTitle("WORK EXPERIENCE"),
                                   WorkExperienceCard(
                                     company: "TDIT SOLUTION PRIVATE LIMITED",
                                     role: "FLUTTER DEVELOPER",
                                     duration: "July 2025 – Aug 2025",
                                     location: "Chennai",
                                     responsibilities: [
-                                      "Developed a responsive and user-friendly UI...",
-                                      "Integrated REST APIs to manage request workflows...",
-                                      "Implemented live location tracking...",
+                                      "Developed a responsive and user-friendly UI for the SMART SORT recycling app, allowing requestors to raise pickup requests for their mixed material waste to either collectors or nearby collection centers.",
+                                      "Integrated REST APIs to manage request workflows between Requestors, Collectors, Collection Centers, and Collector Supervisors, ensuring smooth communication and real-time data sync.",
+                                      "Implemented live location tracking using SignalR and Geolocator, enabling requestors to view real-time movement and estimated arrival of assigned collectors.",
                                     ],
                                   ),
                                   WorkExperienceCard(
-                                    company:"NITHRA APPS INDIA PRIVATE LIMITED",
+                                    company:
+                                        "NITHRA APPS INDIA PRIVATE LIMITED",
                                     role: "JUNIOR FLUTTER DEVELOPER",
                                     duration: "April 2023 – June 2025",
                                     location: "Tiruchengode",
                                     responsibilities: [
-                                      "Developed a dynamic, cross-platform Matrimony app...",
-                                      "Built reusable, responsive UI components...",
-                                      "Contributed to Jobs and Calendar apps...",
-                                      "Worked in Agile teams...",
+                                      "Developed a dynamic, cross-platform NITHRA Matrimony application using Flutter, enabling users to search, filter, and connect with compatible profiles. Integrated key features such as interest requests, photo access permissions, and preference-based matching.",
+                                      "Built reusable, responsive UI components with Flutter for both Android and iOS, ensuring consistent performance and native experience across devices.",
+                                      "Contributed to the development of Nithra products such as Jobs and Calendar, working across all stages from design to deployment.",
+                                      "Collaborated with cross-functional teams and contributed to project development using Agile methodologies.",
                                     ],
                                   ),
                                   WorkExperienceCard(
@@ -177,11 +177,12 @@ class _PortfolioPageState extends State<PortfolioPage>
                                     duration: "March 2022 – June 2022",
                                     location: "Chennai",
                                     responsibilities: [
-                                      "Developed webpages using HTML, CSS, JS...",
-                                      "Created layouts with animations...",
-                                      "Ensured cross-browser compatibility...",
+                                      "Developed responsive and user-friendly webpages using HTML, CSS, and JavaScript.",
+                                      "Created clean and interactive layouts with basic animations and UI components.",
+                                      "Gained hands-on experience in building forms, handling user input, and ensuring cross-browser compatibility.",
                                     ],
                                   ),
+
                                   const SizedBox(height: 20),
                                   // Show image below for mobile
                                   RotatedBox(
@@ -203,7 +204,7 @@ class _PortfolioPageState extends State<PortfolioPage>
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        sectionTitle("WORK EXPERIENCE"),
+                                        // sectionTitle("WORK EXPERIENCE"),
                                         WorkExperienceCard(
                                           company:
                                               "TDIT SOLUTION PRIVATE LIMITED",
@@ -211,9 +212,9 @@ class _PortfolioPageState extends State<PortfolioPage>
                                           duration: "July 2025 – Aug 2025",
                                           location: "Chennai",
                                           responsibilities: [
-                                            "Developed a responsive and user-friendly UI...",
-                                            "Integrated REST APIs to manage request workflows...",
-                                            "Implemented live location tracking...",
+                                            "Developed a responsive and user-friendly UI for the SMART SORT recycling app, allowing requestors to raise pickup requests for their mixed material waste to either collectors or nearby collection centers.",
+                                            "Integrated REST APIs to manage request workflows between Requestors, Collectors, Collection Centers, and Collector Supervisors, ensuring smooth communication and real-time data sync.",
+                                            "Implemented live location tracking using SignalR and Geolocator, enabling requestors to view real-time movement and estimated arrival of assigned collectors.",
                                           ],
                                         ),
                                         WorkExperienceCard(
@@ -223,10 +224,10 @@ class _PortfolioPageState extends State<PortfolioPage>
                                           duration: "April 2023 – June 2025",
                                           location: "Tiruchengode",
                                           responsibilities: [
-                                            "Developed a dynamic, cross-platform Matrimony app...",
-                                            "Built reusable, responsive UI components...",
-                                            "Contributed to Jobs and Calendar apps...",
-                                            "Worked in Agile teams...",
+                                            "Developed a dynamic, cross-platform NITHRA Matrimony application using Flutter, enabling users to search, filter, and connect with compatible profiles. Integrated key features such as interest requests, photo access permissions, and preference-based matching.",
+                                            "Built reusable, responsive UI components with Flutter for both Android and iOS, ensuring consistent performance and native experience across devices.",
+                                            "Contributed to the development of Nithra products such as Jobs and Calendar, working across all stages from design to deployment.",
+                                            "Collaborated with cross-functional teams and contributed to project development using Agile methodologies.",
                                           ],
                                         ),
                                         WorkExperienceCard(
@@ -236,9 +237,9 @@ class _PortfolioPageState extends State<PortfolioPage>
                                           duration: "March 2022 – June 2022",
                                           location: "Chennai",
                                           responsibilities: [
-                                            "Developed webpages using HTML, CSS, JS...",
-                                            "Created layouts with animations...",
-                                            "Ensured cross-browser compatibility...",
+                                            "Developed responsive and user-friendly webpages using HTML, CSS, and JavaScript.",
+                                            "Created clean and interactive layouts with basic animations and UI components.",
+                                            "Gained hands-on experience in building forms, handling user input, and ensuring cross-browser compatibility.",
                                           ],
                                         ),
                                       ],
@@ -249,7 +250,7 @@ class _PortfolioPageState extends State<PortfolioPage>
                                     quarterTurns: 1,
                                     child: Image.asset(
                                       "assets/wrk_ecp.png",
-                                      height: 300,
+                                      height: 250,
                                     ),
                                   ),
                                 ],
@@ -337,7 +338,6 @@ class _PortfolioPageState extends State<PortfolioPage>
       ),
     );
   }
-
 
   Widget buildEducation(String title, String subtitle) {
     return Card(
@@ -437,6 +437,4 @@ class _PortfolioPageState extends State<PortfolioPage>
       ),
     );
   }
-
-
 }
