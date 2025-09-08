@@ -245,7 +245,7 @@ class _PortfolioPageState extends State<PortfolioPage>
                                       ],
                                     ),
                                   ),
-                                  const SizedBox(width: 20),
+                                  
                                   RotatedBox(
                                     quarterTurns: 1,
                                     child: Image.asset(
